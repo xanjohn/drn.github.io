@@ -1,0 +1,47 @@
+<html>
+<title>Tugas 14</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container w3-grey">
+ <img src="atas.jpg" alt="atas" style="width:100%">
+</div>
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="openTombol('Bandung')">Bandung</button>
+ <button class="w3-bar-item w3-button" onclick="openTombol('Jakarta')">Jakarta</button>
+ <button class="w3-bar-item w3-button" onclick="openTombol('Bali')">Bali</button>
+ <button class="w3-bar-item w3-button" onclick="openTombol('Yogyakarta')">Yogyakarta</button>
+ <button class="w3-bar-item w3-button" onclick="openTombol('Profil')">Profil</button>
+</div>
+<div id="Bandung" class="w3-container w3-center Tombol w3-animate-fading w3-purple" style="display:none">
+ <img src="bandung.jpeg" alt="bandung" style="width:100%; height:80%">
+</div>
+<div id="Jakarta" class="w3-container w3-center Tombol w3-animate-bottom w3-grey" style="display:none">
+ <img src="jakarta.jpg" alt="jkrt" style="width:100%; height:80%"> 
+</div>
+<div id="Bali" class="w3-container w3-center Tombol w3-animate-top w3-cyan" style="display:none">
+ <img src="bali.jpg" alt="bali" style="width:100%; height:80%">
+</div>
+<div id="Yogyakarta" class="w3-container w3-center Tombol w3-animate-zoom w3-black" style="display:none">
+ <img src="jogja.jpg" alt="jogja" style="width:100%; height:80%">
+</div>
+<div id="Profil" class="w3-container w3-center Tombol w3-animate-zoom w3-grey" style="display:none">
+ <img src="deri.jpg" alt="dri" style="width:40%; height:60%"><br>
+ <br>
+ <hr>
+ <h2><i>Deri Rizky Nugraha</i></h2><br>
+ <h2><i>10121069</i></h2><br>
+ <h2><i>IF-2</i></h2>
+</div>
+<script>
+function openTombol(namaTombol) {
+ var i;
+ var x = document.getElementsByClassName("Tombol");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaTombol).style.display = "block"; 
+}
+</script>
+</body>
+</html>
